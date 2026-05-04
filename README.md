@@ -2,7 +2,7 @@
 
 Build an MCP server that helps a teacher differentiate instruction for a student with an Individualized Education Program (IEP).
 
-**Prize:** $500 to the winner. Top 5 submissions get an immediate final-round interview for the founding engineer role at [Waypoint Learning] The challenge is designed to take no more than a few hours.
+**Prize:** $500 to the winner. Top 5 submissions get an immediate final-round interview for the founding engineer role at Waypoint Learning The challenge is designed to take no more than a few hours.
 
 **Deadline:** Monday, May 11 @ 12pm ET
 
