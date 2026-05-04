@@ -18,7 +18,7 @@ Given a lesson and a student's IEP, the system should produce **specific, action
 
 ## What's in This Repo
 
-lessons/          # Sample lessons from a real K-8 curriculum
+lesson/           # Sample lesson from a real K-8 curriculum
 
 iep/              # Sample IEP document (anonymized)
 
