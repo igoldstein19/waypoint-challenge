@@ -109,7 +109,7 @@ We're looking for a founding engineer who wants to build the technical foundatio
 
 The work involves building AI-powered tools for teachers — ingesting and understanding curriculum, reasoning about IEPs, generating actionable instructional modifications, automating reporting workflows, and creating tight feedback loops so teachers know what's working. The stack is early and flexible.
 
-This role is ideal for a strong new grad or junior engineer who wants massive ownership, cares about education, and is excited about building with LLMs in a domain where the work genuinely matters.
+This role is ideal for a strong engineer who wants massive ownership, cares about education, and is excited about building with LLMs in a domain where the work genuinely matters.
 
 ## About Waypoint Learning
 
