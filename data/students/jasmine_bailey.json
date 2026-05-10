@@ -1,0 +1,189 @@
+{
+  "student": {
+    "name": "Jasmine Regina Bailey",
+    "student_id": "jasmine_bailey",
+    "grade": 7,
+    "age": 12,
+    "disability": ["Health Impairment"],
+    "school": "Riverstone Prep Public Charter School",
+    "primary_language": "English"
+  },
+  "iep_dates": {
+    "from": "2025-12-09",
+    "to": "2026-12-08"
+  },
+  "parent_concerns": "Jasmine has no concerns at this time. Jasmine's mom is concerned about her grades and her ability to keep up with grade-level work.",
+  "student_vision": {
+    "this_year": {
+      "math": "I want to get faster at multi-step problems.",
+      "ela": "I want to read books that aren't too easy and be able to understand them.",
+      "science": "I want to do more lab experiments and write about what I see.",
+      "history": "I want to learn how to take better notes."
+    },
+    "long_term": [
+      "Get 3's in all classes (mastery on standards-based grading scale)",
+      "Ask for help when stuck instead of giving up",
+      "Graduate from Riverstone Prep Middle School and attend Riverstone Prep High School"
+    ]
+  },
+  "present_levels": [
+    {
+      "area": "ela",
+      "current_grade_level": 3,
+      "subcategories": {
+        "vocabulary": 3,
+        "literature_comprehension": 3,
+        "informational_text_comprehension": 2
+      },
+      "summary": "Currently, Jasmine is at a third-grade reading level, as measured by iReady in Fall 2025. She can decode most grade level words and reads with adequate fluency. However, when asked literal and inferential questions about a text verbally or in writing, she struggles to provide accurate answers. She has low reading and writing stamina and requires frequent reminders to use comprehension skills such as tracking the text, annotating, and rereading when working independently. When offered small group instruction in ELA, she chooses to stay in whole group 80% of the time. When faced with grade-level literacy tasks she finds difficult during whole-group instruction, she struggles to sustain attention and disengages by quietly putting her head down or asking to use the restroom multiple times. She tends to shut down rather than ask for help. She is successful 1:1 but currently requires support to generalize these skills to group settings.",
+      "strengths": "Likes to participate in ELA, loves to help others, enjoys class jobs. Motivated by specific positive praise. Enjoys talking with peers. Open to feedback during 1-on-1 check-ins.",
+      "impact_of_disability": "Affects attention, task initiation, focus, stamina, and study skills. Leads to avoidance behaviors, withdrawal from instruction, and trouble with adaptability and task initiation."
+    },
+    {
+      "area": "math",
+      "current_grade_level": 4,
+      "summary": "Jasmine has gotten better with multi-digit operations and integer rules and is at a grade 4 level on her most recent iReady math assessment. When calm and focused she contributes thoughtful comments in class. She is working on increasing her math problem solving skill with word problems.",
+      "strengths": "Better with multi-digit operations and integer rules. Participates when calm and focused.",
+      "impact_of_disability": "Attention and stamina issues affect ability to work through multi-step problems independently."
+    },
+    {
+      "area": "behavioral",
+      "summary": "Jasmine is new to Riverstone Prep and has adjusted relatively well. She attends counseling weekly and engages with her counselor. She prefers small-group and quiet activities. At times, Jasmine struggles to regulate herself in the classroom and shuts down. In counseling she demonstrates the ability to identify coping strategies. She shows increasing understanding of personal boundaries and can distinguish between her own emotions and how others might feel. There is a clear pattern where academic frustration leads to avoidance behaviors: rather than asking for help, Jasmine disengages and puts her head down. Because of this withdrawal pattern she has spent a significant amount of time outside of the classroom checking in with adults, leading to inconsistent time in class.",
+      "strengths": "Bright scholar who loves creative activities. Enjoys drawing, dance, and spending time with peers and family. Can identify coping strategies in the counseling setting. Can walk away from situations that are difficult for her.",
+      "impact_of_disability": "Struggles to regulate in class when she encounters frustration, prompting her to withdraw and shut down. Makes it challenging to remain engaged in group instruction. The team found Jasmine is more vulnerable to bullying due to her disability."
+    }
+  ],
+  "accommodations": {
+    "presentation": [
+      "Repeat directions",
+      "Reminders to pause, plan, proceed"
+    ],
+    "response": [
+      "Reference sheets, graphic organizers and checklists",
+      "Copy of teacher's notes"
+    ],
+    "timing": [
+      "Extra time",
+      "Frequent breaks",
+      "Scheduled breaks",
+      "Reminder to remain engaged"
+    ],
+    "setting": [
+      "Small group (as needed)",
+      "Sit in the front of the room",
+      "1:1 check-ins"
+    ]
+  },
+  "modifications": {
+    "content": [],
+    "instruction": [
+      "Multimodal",
+      "Inclusion support",
+      "Small group pull-outs when appropriate"
+    ],
+    "student_output": []
+  },
+  "goals": [
+    {
+      "goal_id": 1,
+      "area": "Counseling/Self-Regulation",
+      "baseline": "Jasmine is new to Riverstone Prep and has acclimated well. She is able to engage and enjoys socializing with peers in unstructured settings. In counseling sessions, she does well listening to instructions but struggles to use interventions when prompted. She can identify the emotions others might feel in difficult situations in the counseling setting. She can recognize and acknowledge her involvement in counseling but sometimes does not apply these strategies in the classroom, leading to withdrawal and shutdown. When frustration arises, she has shown the ability to walk away from situations that are difficult for her, but sometimes shuts down rather than using strategies that work for her.",
+      "annual_target": "Improve self-regulation skills by using a taught calming strategy (deep breathing, movement break, fidget tool, sensory tool, or grounding exercise) to calm her body and re-engage back to tasks 4 out of 5 opportunities, as measured by reports and observation.",
+      "measurement_criteria": "80% of opportunities (4 out of 5)",
+      "method": "Observation, Work Samples",
+      "schedule": "End of the Quarter",
+      "person_responsible": "Social Worker",
+      "benchmarks": [
+        "Given fading adult support, recognize and describe physical cues of being triggered or frustrated (tense body, faster breathing, restlessness, lowered head) in 4 out of 5 opportunities.",
+        "Independently request or initiate a calming strategy (movement break, breathing pattern, sensory tool, grounding exercise) when experiencing dysregulation in 4 out of 5 opportunities.",
+        "When experiencing frustration or being triggered, use a taught self-regulation strategy and return to the classroom to engage in the assigned task, reflecting on the effectiveness of her strategy in 4 out of 5 opportunities."
+      ]
+    },
+    {
+      "goal_id": 2,
+      "area": "Mathematics",
+      "baseline": "When calm and focused, Jasmine likes to participate in class. She has gotten better solving questions involving multi-digit operations and integer rules and is working on increasing her math problem solving skill that involves word problems.",
+      "annual_target": "Improve problem solving of multi-step word problems and grade level questions that involve multiple operations to simplify.",
+      "measurement_criteria": "From an average of 55% to 75%",
+      "method": "Curriculum Based Assessment",
+      "schedule": "End of the Quarter",
+      "person_responsible": "SE Classroom Teacher",
+      "benchmarks": [
+        "Increase skill solving word problems and show understanding with reason from 55% to 75%.",
+        "Improve skill solving equations involving integers and order of operations from 55% to 75%.",
+        "Increase ability to utilize resources such as reference sheets and class notes provided from 55% to 75%."
+      ]
+    },
+    {
+      "goal_id": 3,
+      "area": "ELA",
+      "baseline": "Jasmine's current ELA grade is a 1.8 (standards-based grading: 3 reflects mastery, 2 reflects partial mastery). She is at a third-grade reading level. Subcategory scores: Vocabulary 3, Literature Comprehension 3, Informational Text Comprehension 2. She demonstrates partial and inconsistent engagement in class tasks. Reading homework with comprehension questions ranges from 0% to 50% accuracy when completed independently. She is new to Riverstone Prep's writing system and is still working to create full paragraphs with claims, evidence introduced with context, and analysis. She is starting to find value in graphic organizers and checklists. She requires significant adult support to break down complex vocabulary, sentence structures, and key ideas, and to organize thinking for writing. With 1:1 adult support she can participate at grade level, but independent performance remains below grade-level expectations with 50% accuracy.",
+      "annual_target": "Increase ability to comprehend complex texts to independently answer literal and inferential comprehension questions or writing prompts that meet grade-level rubrics.",
+      "measurement_criteria": "From 50% to 75%",
+      "method": "Work Samples, Curriculum Based Assessment Rubrics",
+      "schedule": "End of the Quarter",
+      "person_responsible": "SE Classroom Teacher",
+      "benchmarks": [
+        "Accurately annotate a given text for the prompt — labeled annotation focus, supporting detail, etc.",
+        "Independently answer literal comprehension questions about a text such as main idea, setting, or plot.",
+        "Write a claim that accurately answers each part of the question.",
+        "Independently find 3 effective pieces of textual evidence (or however many are required for the assignment) to support the claim and answers.",
+        "Write analysis to show how her evidence is relevant to and contributes to her claim."
+      ]
+    }
+  ],
+  "services": [
+    {
+      "goal_ids": [2, 3],
+      "type_of_service": "Academic Support",
+      "provided_by": "Special Education Teacher",
+      "location": "General Education Classroom",
+      "frequency": "Weekly",
+      "duration_minutes": 10,
+      "direct_or_consultation": "consultation"
+    },
+    {
+      "goal_ids": [1],
+      "type_of_service": "Counseling",
+      "provided_by": "Counselor",
+      "location": "Counselor's Office",
+      "frequency": "Monthly",
+      "duration_minutes": 10,
+      "direct_or_consultation": "consultation"
+    },
+    {
+      "goal_ids": [2],
+      "type_of_service": "Math",
+      "provided_by": "Special Education Teacher",
+      "location": "General Education Classroom",
+      "frequency": "Daily",
+      "duration_minutes": 55,
+      "direct_or_consultation": "direct_in_general_ed"
+    },
+    {
+      "goal_ids": [3],
+      "type_of_service": "English Language Arts",
+      "provided_by": "Special Education Teacher",
+      "location": "General Education Classroom",
+      "frequency": "Daily",
+      "duration_minutes": 55,
+      "direct_or_consultation": "direct_in_general_ed"
+    },
+    {
+      "goal_ids": [1],
+      "type_of_service": "Counseling",
+      "provided_by": "Counselor",
+      "location": "Counselor's Office",
+      "frequency": "Weekly",
+      "duration_minutes": 30,
+      "direct_or_consultation": "direct_other"
+    }
+  ],
+  "placement": "Full Inclusion Program (services outside general education classroom less than 21% of the time; 80% inclusion)",
+  "assessment_accommodations": [
+    "DF1 Small Group test administration",
+    "DF3 Frequent brief supervised breaks",
+    "DF4 Separate or alternate test location",
+    "A9 Use a Department approved graphic organizer, checklist, or supplemental reference sheet (SR)"
+  ]
+}

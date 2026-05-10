@@ -1,0 +1,192 @@
+{
+  "lesson_id": "unit1_lesson1",
+  "title": "What is 'Community' and Why is it Important?",
+  "author": "Toby Lowe",
+  "text_type": "informational",
+  "grade": 7,
+  "subject": "ELA",
+  "unit": "Unit 1: Community and Belonging",
+  "lesson_number": 1,
+  "skill_focus": "Determining and summarizing the central idea of a text and identifying the details that develop it",
+  "standard": "RI.7.2",
+  "duration_minutes": 45,
+  "purpose": "To understand what a community is so that we can build our understanding about how communities create feelings of both belonging and rejection.",
+  "knowledge_focus": "This informational text offers a useful and accurate definition for the word 'community' which students will refer to throughout the unit. Students consider the feelings people associate with their communities and how the shared narrative of a community influences members' views.",
+  "vocabulary": ["aspect", "moral", "narrative", "specific"],
+  "teacher_notes": [
+    "This lesson introduces students to key unit knowledge about community. Students will use the definition of community outlined in this article throughout the unit.",
+    "This lesson is designed as a whole-class lesson because it provides students with more guidance on analyzing the author's argument around the definition of community.",
+    "During Reading Questions marked with an asterisk (*) are optional and can be used with students needing more support.",
+    "Recommended facilitation: Option 1 — teacher-led, scaffolded and supportive. Use recommended reading modalities (whole class, partner, independent) and pause to answer During Reading Questions during reading."
+  ],
+  "parts": [
+    {
+      "name": "intro",
+      "duration_minutes": 5,
+      "description": "Guide students through the slide deck to introduce them to the reading lesson and skill focus.",
+      "modality": "whole_class",
+      "questions": []
+    },
+    {
+      "name": "during_reading",
+      "duration_minutes": 15,
+      "description": "Students read the text and answer the During Reading Questions in three reading modalities: whole class (paragraphs 1-2 and 8), partner reading (paragraphs 3-7), and whole class (paragraphs 10-11).",
+      "modality": "mixed",
+      "paragraphs_covered": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+      "questions": [
+        {
+          "label": "1A",
+          "question_type": "think_share",
+          "optional": false,
+          "prompt": "Paragraphs 1-2: What claim does Lowe make about the word 'community' in paragraph 1?",
+          "sample_answer": "It is a word that has a lot of power and can mean different things, but people aren't always clear with what they think it means."
+        },
+        {
+          "label": "1B",
+          "question_type": "write",
+          "optional": true,
+          "prompt": "Paragraphs 1-2: What is the relationship between the claim above and the bulleted list in paragraph 2?",
+          "sample_answer": "Lowe lists the things that a good definition of community should explain."
+        },
+        {
+          "label": "1C",
+          "question_type": "turn_talk",
+          "optional": false,
+          "prompt": "Paragraphs 1-2: Based on the bulleted list, summarize at least three key traits of a community.",
+          "sample_answer": "There are many different kinds of communities. Communities can create positive feelings of togetherness and belonging. Communities influence members' views of what is good and bad. People can be part of multiple communities."
+        },
+        {
+          "label": "2A",
+          "question_type": "write",
+          "optional": false,
+          "prompt": "Paragraphs 3-7: How does Lowe's example of belonging to the Newcastle community support his definition?",
+          "sample_answer": "It shows that part of his identity is the shared story of Newcastle. He acts how people from there are supposed to act, takes pride in the community, and chooses to take part in events that are part of Newcastle's story."
+        },
+        {
+          "label": "2B",
+          "question_type": "turn_talk",
+          "optional": false,
+          "prompt": "Paragraphs 3-7: Consider the communities you are a part of. Share how one of these communities fits Lowe's definition.",
+          "sample_answer": "Student responses will vary. Students should discuss the shared story of their chosen community."
+        },
+        {
+          "label": "3A",
+          "question_type": "turn_talk",
+          "optional": false,
+          "prompt": "Paragraph 8: Refer back to the bulleted list in Paragraph 2. Why does the author include another bulleted list in this section?",
+          "sample_answer": "Lowe tests his definition of community against each of the 6 key traits outlined in paragraph 2."
+        },
+        {
+          "label": "3B",
+          "question_type": "write",
+          "optional": false,
+          "prompt": "Paragraph 8: In your own words, explain at least three reasons why Lowe thinks his definition that community is 'a shared story' works.",
+          "sample_answer": "A community's shared story can be based on place, religion or shared interests. A shared story makes people have positive feelings of belonging. The shared story shapes the way members see the world. People can have more than one identity-forming story so they can be part of many communities."
+        },
+        {
+          "label": "4A",
+          "question_type": "find_evidence",
+          "optional": false,
+          "prompt": "Paragraphs 10-11: The title of this text is 'What is community and why is it important?' Highlight two pieces of evidence that answer both questions.",
+          "sample_answer": "'Community is a group of people who share a story that is so important to them that it defines an aspect of who they are.' (10). 'community is an important concept for social change because it helps us to see that social change requires a change in some of the most important stories we tell ourselves.' (11)"
+        }
+      ]
+    },
+    {
+      "name": "independent_practice",
+      "duration_minutes": 20,
+      "description": "Students complete multiple choice questions (5 min) and a short answer prompt (15 min) to measure their understanding of the text.",
+      "modality": "independent",
+      "questions": [
+        {
+          "label": "MCQ1",
+          "question_type": "mcq",
+          "optional": false,
+          "prompt": "Which best describes the author's main purpose in writing the article? [RI.6]",
+          "options": [
+            "A. to illustrate how important it is to be part of multiple communities",
+            "B. to demonstrate the way community has shaped the author's life",
+            "C. to describe the life of a person who lives in Newcastle",
+            "D. to give a clear and useful definition of community"
+          ]
+        },
+        {
+          "label": "MCQ2",
+          "question_type": "mcq",
+          "optional": false,
+          "prompt": "Which piece of evidence best illustrates the central idea of the article? [RI.1]",
+          "options": [
+            "A. 'So, one of the communities that I consider myself to be part of is the community based around the city of Newcastle.' (Paragraph 5)",
+            "B. 'It is this choice to participate in the making and remaking of these stories about the city that makes me part of the community of Newcastle.' (Paragraph 7)",
+            "C. 'Community is a group of people who share a story that is so important to them that it defines an aspect of who they are.' (Paragraph 9)",
+            "D. 'Social change requires that we rewrite our communal narratives.' (Paragraph 11)"
+          ]
+        },
+        {
+          "label": "MCQ3",
+          "question_type": "mcq",
+          "optional": false,
+          "prompt": "Reread the excerpt from paragraph 5: 'The manifestations of this are that I take pride in showing people around the city. I feel slighted when people say horrible things about it. I feel at home whenever I hear a Geordie (Newcastle) accent (despite not having one myself).' What is the best meaning of the word 'slighted' as it is used in the excerpt? [RI.4]",
+          "options": ["A. bored", "B. insulted", "C. motivated", "D. recognized"]
+        },
+        {
+          "label": "MCQ4",
+          "question_type": "mcq",
+          "optional": false,
+          "prompt": "How do paragraphs 5-7 help the reader understand the author's central idea? [RI.2]",
+          "options": [
+            "A. by explaining why community is neither good nor bad",
+            "B. by describing life for members of the Newcastle community",
+            "C. by giving an example of a community that is part of the author's story",
+            "D. by illustrating how the Newcastle community has many different members"
+          ]
+        }
+      ],
+      "short_response_prompt": "You have just read 'What is community and why is it important?' by Toby Lowe. Explain what Lowe means when he says a community is 'a group of people who share an identity-forming narrative.' [RI.2] Make sure to incorporate relevant unit vocabulary in your writing.",
+      "self_checklist": [
+        "Did I fully answer the prompt?",
+        "Did I include at least two details from the text?",
+        "Did I incorporate relevant unit vocabulary?"
+      ]
+    },
+    {
+      "name": "discussion",
+      "duration_minutes": 5,
+      "description": "Students practice speaking with academic language as they discuss questions about the text with a partner.",
+      "modality": "partner",
+      "questions": [
+        {
+          "label": "D1",
+          "question_type": "turn_talk",
+          "optional": false,
+          "prompt": "Consider a community you are part of. What is something that is considered courteous behavior in that community?"
+        },
+        {
+          "label": "D2",
+          "question_type": "turn_talk",
+          "optional": false,
+          "prompt": "Do you think it is possible to be a part of a community without conforming to its views? Explain your answer."
+        },
+        {
+          "label": "D3",
+          "question_type": "turn_talk",
+          "optional": false,
+          "prompt": "Lowe says that 'people can be part of many communities.' What might be some of the benefits of belonging to more than one community?"
+        }
+      ]
+    }
+  ],
+  "full_text_by_paragraph": {
+    "1": "The word 'community' has a strange power to it. It conveys a sense of togetherness and positivity. It speaks both of solidarity and homeliness. You will, almost never, hear people say what they mean by 'community'. What does community mean? And why is it important?",
+    "2": "Here are the things that I think a definition of community must be able to explain in order to reflect the various communities in the world: (1) account for different types of communities — both communities of place and dispersed ones like 'the academic community' or 'the Islamic community'; (2) account for the positive feelings people have about 'community' (the sense of togetherness) without saying community is necessarily good (e.g., the Mafia); (3) explain the sense of identity and belonging — the feeling of pride or hurt when a community is praised or attacked, and the 'in'/'out' group nature of identity; (4) explain why community has the normative (moral) power that it does — how communities shape our sense of what 'good' and 'bad' means (e.g., what being a good neighbor means); (5) explain why 'community' is different from other social groups like 'society,' 'family,' or just a group of people; (6) account for the fact that people can be part of different communities simultaneously.",
+    "3": "Given that framing, I offer this as my definition of 'community': A community is a group of people who share an identity-forming narrative.",
+    "4": "This means, a group of people who share a story that is so important to them that it defines an aspect of who they are. Those people build the shared story archetypes (characters) of that community into their sense of themselves; they build the history of those communities into their own personal history; and they see the world through the lens of those shared stories.",
+    "5": "So, one of the communities that I consider myself to be part of is the community based around the city of Newcastle. The manifestations of this are that I take pride in showing people around the city. I feel slighted when people say horrible things about it. I feel at home whenever I hear a Geordie (Newcastle) accent (despite not having one myself). And so on.",
+    "6": "But what makes me part of this community is my choice to write Newcastle's stories into my own story: the character traits for how Geordies are supposed to behave (be friendly, talk to strangers at bus stops, support Newcastle United, etc.) are character traits that I have adopted. I take part in shared events where this story is played out — such as attending football matches at St. James Park and other cultural events in the city. I feel that arguments about the future of the city are arguments about my own future. I see arguments about the UK's future through the lens of the future of Newcastle.",
+    "7": "It is this choice to participate in the making and remaking of these stories about the city that makes me part of the community of Newcastle. It's not just about where you live, or where you work: it is possible to live and work in Newcastle without doing these things, without becoming part of this community. And there are many people who are from Newcastle originally, but who now live elsewhere, who would still consider themselves part of the Newcastle community because they still take an active part in conversations about what it means to be a part of this community.",
+    "8": "Let's see how this definition works against the six key criteria for being an accurate and useful definition of 'community': (1) it accounts for all kinds of community — communities of interest and communities of place — because the essence of community is a shared story (about a place, religion, or social practice); (2) it accounts for positive feelings (sense of shared identity) while acknowledging that communities can be positive or negative — community is not, in itself, morally praiseworthy, it just is; (3) it explains shared identity through the mechanism of telling a story about yourself drawing on shared cultural archetypes; (4) it explains community's normative (moral) force because narratives provide our explanations for what good/bad look like (e.g., a 'good neighbor' is someone who fits the story we tell about how good neighbors behave); (5) it explains why community differs from other social groups — a community is a group with a shared identity-forming narrative, distinct from people who happen to live in a place or share an interest; (6) it accounts for being part of many communities simultaneously, drifting in and out, and the tension when identity-defining stories from different communities clash.",
+    "9": "Community is a group of people who share a story that is so important to them that it defines an aspect of who they are. Those people build the shared story archetypes (characters) of that community into their sense of themselves; they build the history of those communities into their own personal history; and they see the world through the lens of those shared stories.",
+    "10": "On one level, this is simply a plea for a more precise use of language. I am not saying that 'community' is the only (or even most important) social grouping, but it is a particular type of social grouping that explains the strong sense of shared identity that people feel, and membership of particular groups give us a lens through which we see the world.",
+    "11": "I think my key message is that community is an important concept for social change because it helps us to see that social change requires a change in some of the most important stories we tell ourselves. Social change requires that we rewrite our communal narratives. Social change is change in community."
+  }
+}

@@ -116,3 +116,108 @@ This role is ideal for a strong engineer who wants massive ownership, cares abou
 Waypoint is building AI tools that help teachers serve students with disabilities by both streamlining administrative work and supporting fundamentally better instruction. We believe the highest-leverage point in education is the teacher, and the hardest thing teachers do is differentiate instruction for students with diverse learning needs.
 
 Founder & CEO: Isaac Goldstein studied CS at Stanford and is finishing is MBA at Harvard. He hasive years in education at EY-Parthenon, BCG, and Great Minds, where he led a 330-person curriculum implementation team - and he's looking to partner with a great engineer to build a very impactful business.
+
+---
+
+# Submission — Waypoint MCP Server
+
+A Python MCP server that gives Claude the structured context it needs to differentiate a lesson for a student with an IEP, in minutes instead of hours. The teacher's UI is **Claude Desktop** — no separate web app, no API key required.
+
+## What's built
+
+```
+core/
+  schemas.py       # Pydantic models for IEP and Lesson
+  data_loader.py   # Filesystem-based loaders (drop-in JSON = new student/lesson)
+  prompts.py       # Differentiation system prompt + user prompt builders
+data/
+  students/jasmine_bailey.json    # Hand-authored from the source IEP PDF
+  lessons/unit1_lesson1.json      # Hand-authored from the Community lesson PDF
+server.py          # FastMCP server: 5 tools, 6 resources, 2 prompts
+requirements.txt
+```
+
+**MCP surface exposed to Claude:**
+
+| Type | Name | Purpose |
+|---|---|---|
+| Tool | `list_students`, `list_lessons` | Discovery |
+| Tool | `get_iep_section(student_id, section)` | Pull one IEP section (`accommodations`, `goals`, `present_levels`, etc.) |
+| Tool | `get_lesson_part(lesson_id, part_name)` | Pull one lesson part (`intro`, `during_reading`, …) |
+| Tool | `differentiate_lesson(student_id, lesson_id)` | **Primary entry point** — bundles full IEP + lesson + the system prompt |
+| Resource | `students://list`, `lessons://list`, `iep://{id}`, `iep://{id}/{section}`, `lesson://{id}`, `lesson://{id}/{part}` | Same data as tools, addressable by URI |
+| Prompt | `/differentiate <student_id> <lesson_id>` | Slash-command for the core flow |
+| Prompt | `/student_snapshot <student_id>` | 60-second briefing (e.g. for a sub) |
+
+## Approach & key decisions
+
+- **Hand-authored structured JSON over PDF parsers.** The IEP and lesson are one-shot demo data; brittle parsing of two specific PDFs would burn time and produce worse data than carefully transcribing what matters into Pydantic-validated JSON. Adding a real PDF ingestion path is a separate, larger problem.
+- **Filesystem-based multi-student/multi-lesson scaling.** Adding a student = drop a JSON file in `data/students/`. No code changes, no DB, no vector index. The schema enforces shape; loaders auto-discover.
+- **Lesson text is paragraph-keyed** (`full_text_by_paragraph`), so Claude can cite specific paragraphs in modifications instead of saying "scaffold the reading."
+- **Both whole-document and section-level access.** Claude can pull `iep://jasmine_bailey/accommodations` for a narrow question, or call `differentiate_lesson` to get everything at once for the full plan. Keeping the surface this way means Claude doesn't burn context when it doesn't need to.
+- **Prompt engineering is the highest-leverage piece.** The differentiation system prompt has 6 explicit rules forcing modifications to (1) cite a specific accommodation/goal/present-level finding, (2) reference specific lesson paragraphs/questions, (3) walk the lesson in pacing order, (4) bridge the access gap concretely, (5) anticipate Jasmine's avoidance/shutdown pattern with proactive 1:1 check-ins, and (6) output in a teacher-actionable format ending with a Materials checklist.
+- **No fine-tuning, no vector RAG.** Both fail the cost/benefit test for a corpus this small (one IEP, one lesson). The whole problem fits in Claude's context window. Structured retrieval via MCP tools beats both for grounding.
+- **Claude Desktop as the UI.** The README brief asks for an MCP server; Claude Desktop is the canonical client. Building a separate Streamlit app would be lower fidelity than the chat surface teachers will actually use.
+
+## How to run & test
+
+### 1. Install
+
+```bash
+pip install -r requirements.txt
+```
+
+This installs `mcp[cli]` and `pydantic`. No API key needed.
+
+### 2. Configure Claude Desktop
+
+Edit `%APPDATA%\Claude\claude_desktop_config.json` (Windows) or `~/Library/Application Support/Claude/claude_desktop_config.json` (macOS):
+
+```json
+{
+  "mcpServers": {
+    "waypoint": {
+      "command": "<absolute path to python.exe in your env>",
+      "args": ["<absolute path>/server.py"]
+    }
+  }
+}
+```
+
+Use the absolute path to the `python` where you ran `pip install` — easiest is the venv's `python.exe`.
+
+**Fully quit Claude Desktop** (tray icon → Quit, not just close window) and reopen. The tools menu in the chat composer should now show **waypoint** with 5 tools.
+
+### 3. Try these prompts
+
+| Prompt | What to expect |
+|---|---|
+| `What students and lessons are available?` | Claude calls `list_students` / `list_lessons` |
+| `What are Jasmine Bailey's accommodations?` | Claude calls `get_iep_section` and lists presentation/response/timing/setting accommodations |
+| `Differentiate the lesson "What is 'Community' and Why is it Important?" for Jasmine Bailey.` | Part-by-part modification plan, paragraph-grounded, with a Materials checklist |
+| `/student_snapshot jasmine_bailey` | <200-word briefing leading with top accommodations + her shutdown pattern |
+
+### 4. What "good output" looks like
+
+For the differentiation prompt, a high-quality answer:
+
+- Walks the lesson **in pacing order** (intro → during reading → independent practice → discussion).
+- References **specific paragraphs / question labels** (e.g., "before paragraph 3, pre-teach *narrative* on a vocabulary card") rather than "scaffold the reading."
+- Ties each modification back to a **specific IEP element** — accommodation name, goal benchmark, or present-level finding.
+- Adds **proactive 1:1 check-ins** at the moments Jasmine is most likely to disengage (independent practice is the obvious risk).
+- Ends with a printable **Materials to Prepare** checklist.
+
+Generic UDL platitudes ("provide multiple means of representation") = the system prompt isn't reaching Claude — verify by calling `differentiate_lesson` directly.
+
+### 5. Adding a new student or lesson
+
+Drop a JSON file matching the Pydantic schemas in `core/schemas.py` into `data/students/` or `data/lessons/`. No code, no restart of anything other than Claude Desktop's connection to the server. `list_students` / `list_lessons` will pick it up.
+
+### 6. Troubleshooting
+
+| Symptom | Fix |
+|---|---|
+| Server doesn't appear in Claude Desktop | Fully quit Claude Desktop (tray → Quit) and reopen. Validate JSON syntax. |
+| `ModuleNotFoundError: mcp` in `mcp-server-waypoint.log` | The `command` is using a python without `mcp` installed. Point it at the venv's `python.exe`. |
+| `FileNotFoundError: No IEP found...` | The `student_id` must match a JSON filename in `data/students/` (without `.json`). Use `list_students` to discover IDs. |
+| Output is generic | Make sure you're invoking `differentiate_lesson` (or `/differentiate`). Free-form questions may not pull the system prompt rules. |
